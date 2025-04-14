@@ -26,6 +26,5 @@ jobs:
     - name: 📤 Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.TECH_SUMMIT_DEMO }}
         publish_dir: ./
         publish_branch: gh-pages
