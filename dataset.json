@@ -1,0 +1,27 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "age": 15,
+            "department": "Engineering"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "age": 29,
+            "department": "Engineering"
+        },
+        {
+            "id": 3,
+            "name": "Willson",
+            "age": 35,
+            "department": "Marketing"
+        }
+    ],
+    "company": {
+        "name": "Tech Summit Inc.",
+        "location": "Gurgaon",
+        "founded": 2010
+    }
+}
