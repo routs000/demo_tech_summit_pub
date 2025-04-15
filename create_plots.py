@@ -207,7 +207,7 @@ def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
     """
     chart_name = "Line Chart"
     chart_file = "line_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(
@@ -276,7 +276,7 @@ def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y A
     """
     chart_name = "Scatter Chart"
     chart_file = "scatter_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(
@@ -346,7 +346,7 @@ def create_pie_plot(sizes, labels=None, title='Pie Chart', colors=None,
     """
     chart_name = "Pie Chart"
     chart_file = "pie_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure(data=[go.Pie(
         labels=labels,
