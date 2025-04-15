@@ -9,8 +9,6 @@ import pandas as pd
 df = get_dataframe()
 print(df)
 save_path = 'output_images'
-if not os.path.exists(save_path):
-    os.makedirs(save_path)
 metadata = []
 metadata.append(create_line_plot(x=df['name'], y=df['age'], title='Line Plot', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
 metadata.append(create_scatter_plot(x=df['department'], y=df['age'], title='Scatter Plot', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
