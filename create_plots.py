@@ -170,7 +170,7 @@ import os
 
 
 def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
-                     color='blue', marker='circle', linestyle='solid', figsize=(800, 500),
+                     color='blue', marker='circle', linestyle='solid', figsize=(500, 500),
                      grid=True, save_path=None):
     """
     Create a line plot with customizable parameters using Plotly.
@@ -207,7 +207,7 @@ def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
     """
     chart_name = "Line Chart"
     chart_file = "line_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(
@@ -239,7 +239,7 @@ def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
 
 
 def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y Axis',
-                       color='blue', marker='circle', alpha=0.7, figsize=(800, 500),
+                       color='blue', marker='circle', alpha=0.7, figsize=(500, 500),
                        grid=True, save_path=None):
     """
     Create a scatter plot with customizable parameters using Plotly.
@@ -276,7 +276,7 @@ def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y A
     """
     chart_name = "Scatter Chart"
     chart_file = "scatter_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(
@@ -311,7 +311,7 @@ def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y A
 
 
 def create_pie_plot(sizes, labels=None, title='Pie Chart', colors=None,
-                   textinfo='percent+label', startangle=90, figsize=(700, 700),
+                   textinfo='percent+label', startangle=90, figsize=(500, 500),
                    hole=0, pull=None, save_path=None):
     """
     Create a pie chart with customizable parameters using Plotly.
@@ -346,7 +346,7 @@ def create_pie_plot(sizes, labels=None, title='Pie Chart', colors=None,
     """
     chart_name = "Pie Chart"
     chart_file = "pie_chart.html"
-    image_url = f"https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/{chart_file}?raw=true"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
     
     fig = go.Figure(data=[go.Pie(
         labels=labels,

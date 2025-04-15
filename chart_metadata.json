@@ -1,14 +1,14 @@
 [
   {
     "chart_name": "Line Chart",
-    "image_url": "https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/line_chart.html?raw=true"
+    "image_url": "https://routs000.github.io/demo_tech_summit_pub/output_images/line_chart.html"
   },
   {
     "chart_name": "Scatter Chart",
-    "image_url": "https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/scatter_chart.html?raw=true"
+    "image_url": "https://routs000.github.io/demo_tech_summit_pub/output_images/scatter_chart.html"
   },
   {
     "chart_name": "Pie Chart",
-    "image_url": "https://github.com/routs000/demo_tech_summit/blob/gh-pages/output_images/pie_chart.html?raw=true"
+    "image_url": "https://routs000.github.io/demo_tech_summit_pub/output_images/pie_chart.html"
   }
 ]
