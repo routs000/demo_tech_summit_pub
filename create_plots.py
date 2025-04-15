@@ -370,3 +370,87 @@ def create_pie_plot(sizes, labels=None, title='Pie Chart', colors=None,
         "chart_name": chart_name,
         "image_url": image_url
     }
+
+
+def create_bar_plot(x, y, title='Bar Plot', xlabel='X Axis', ylabel='Y Axis',
+                    color='blue', orientation='v', text=None, 
+                    grid=True, save_path=None):
+    """
+    Create a responsive bar plot with customizable parameters using Plotly.
+    
+    Parameters:
+    -----------
+    x : array-like
+        Categories for the x-axis (or values if orientation='h')
+    y : array-like
+        Values for the y-axis (or categories if orientation='h')
+    title : str
+        Title of the plot
+    xlabel : str
+        Label for the x-axis
+    ylabel : str
+        Label for the y-axis
+    color : str or array-like
+        Color(s) of the bars
+    orientation : str
+        'v' for vertical bars, 'h' for horizontal bars
+    text : array-like, optional
+        Text to display on each bar
+    grid : bool
+        Whether to show grid lines
+    save_path : str, optional
+        If provided, save the figure to this path
+    
+    Returns:
+    --------
+    dict
+        Chart metadata
+    """
+    chart_name = "Bar Chart"
+    chart_file = "bar_chart.html"
+    image_url = f"https://routs000.github.io/demo_tech_summit_pub/output_images/{chart_file}"
+    
+    fig = go.Figure()
+    
+    # Add the bar trace
+    if orientation == 'v':
+        fig.add_trace(go.Bar(
+            x=x,
+            y=y,
+            text=text,
+            marker_color=color,
+        ))
+    else:  # horizontal bars
+        fig.add_trace(go.Bar(
+            x=y,
+            y=x,
+            text=text,
+            marker_color=color,
+            orientation='h'
+        ))
+    
+    # Update layout
+    fig.update_layout(
+        title=title,
+        xaxis_title=xlabel,
+        yaxis_title=ylabel,
+        autosize=True,
+        template='plotly_white' if grid else 'plotly'
+    )
+    
+    # Configure text position and bar appearance
+    fig.update_traces(
+        textposition='auto',  # 'inside', 'outside', 'auto'
+        hoverinfo='x+y',
+        hovertemplate='%{x}<br>%{y}<extra></extra>' if orientation == 'v' else '%{y}<br>%{x}<extra></extra>'
+    )
+    
+    if save_path:
+        if not os.path.exists(save_path):
+            os.makedirs(save_path)
+        fig.write_html(f'{save_path}/{chart_file}', include_plotlyjs='cdn')
+    
+    return {
+        "chart_name": chart_name,
+        "image_url": image_url
+    }

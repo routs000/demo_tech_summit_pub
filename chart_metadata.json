@@ -10,5 +10,9 @@
   {
     "chart_name": "Pie Chart",
     "image_url": "https://routs000.github.io/demo_tech_summit_pub/output_images/pie_chart.html"
+  },
+  {
+    "chart_name": "Bar Chart",
+    "image_url": "https://routs000.github.io/demo_tech_summit_pub/output_images/bar_chart.html"
   }
 ]
