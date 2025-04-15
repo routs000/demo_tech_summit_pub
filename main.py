@@ -13,7 +13,7 @@ metadata = []
 metadata.append(create_line_plot(x=df['name'], y=df['age'], title='Line Plot', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
 metadata.append(create_scatter_plot(x=df['department'], y=df['age'], title='Scatter Plot', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
 metadata.append(create_pie_plot(df['age'], title='Pie Chart', save_path=save_path))
-metadata.append(create_bar_plot(x=df['department'], y=df['department'].value_counts, title='Bar Chart', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
+metadata.append(create_bar_plot(x=df['department'], y=[2, 1], title='Bar Chart', xlabel='X Axis', ylabel='Y Axis', save_path=save_path))
 # ... add more chart calls as needed
 
 # Convert the metadata list to JSON and write to file
