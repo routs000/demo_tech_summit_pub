@@ -18,3 +18,5 @@ seaborn==0.13.2
 six==1.17.0
 tzdata==2025.2
 urllib3==2.4.0
+plotly==6.0.1
+kaleido>=0.2.1
