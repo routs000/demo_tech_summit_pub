@@ -293,7 +293,7 @@ def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y A
         title=title,
         xaxis_title=xlabel,
         yaxis_title=ylabel,
-        autozise=True,
+        autosize=True,
         template='plotly_white' if grid else 'plotly'
     )
     
