@@ -170,7 +170,7 @@ import os
 
 
 def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
-                     color='blue', marker='circle', linestyle='solid', figsize=(800, 500),
+                     color='blue', marker='circle', linestyle='solid', figsize=(500, 500),
                      grid=True, save_path=None):
     """
     Create a line plot with customizable parameters using Plotly.
@@ -239,7 +239,7 @@ def create_line_plot(x, y, title='Line Plot', xlabel='X Axis', ylabel='Y Axis',
 
 
 def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y Axis',
-                       color='blue', marker='circle', alpha=0.7, figsize=(800, 500),
+                       color='blue', marker='circle', alpha=0.7, figsize=(500, 500),
                        grid=True, save_path=None):
     """
     Create a scatter plot with customizable parameters using Plotly.
@@ -311,7 +311,7 @@ def create_scatter_plot(x, y, title='Scatter Plot', xlabel='X Axis', ylabel='Y A
 
 
 def create_pie_plot(sizes, labels=None, title='Pie Chart', colors=None,
-                   textinfo='percent+label', startangle=90, figsize=(700, 700),
+                   textinfo='percent+label', startangle=90, figsize=(500, 500),
                    hole=0, pull=None, save_path=None):
     """
     Create a pie chart with customizable parameters using Plotly.
